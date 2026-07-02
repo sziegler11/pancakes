@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pancake Panic!</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: #0d0d1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  canvas {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: min(96vw, calc(96vh * 16 / 9));
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 4px solid #2a2a45;
+    box-shadow: 0 0 40px #000;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="320" height="180"></canvas>
+<script src="game.js"></script>
+</body>
+</html>
